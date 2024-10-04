@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eater's Delight - Place an Order</title>
+    <link rel="stylesheet" href="../static/css/order.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@800&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div id="box">
+            <div id="lines-logo">
+                <div class="line"></div>
+                <img id="main-logo" src="../static/images/Logo.png" alt="logo">
+                <div class="line"></div>
+            </div>
+            <h1 id="title">Eater's Delight Menu</h1>
+        </div>
+    </div>
+    <div id="content">
+        <div id="cartRow">
+            <h1 class="category" id="firstCategory">Burgers</h1>
+            <a id="cart" href="{{url_for('cart')}}">
+                <h3 id="cartBadge"></h3>
+            </a>
+        </div>
+        <div class="two-items">
+            <div class="one-item">
+                <img class="item-image" src="../static/images/classic burger.jpg" alt="Classic Burger">
+                <div class="item-detail">
+                    <h3 class="item-name">Classic Burger</h3>
+                    <h5 class="description">A juicy beef patty, cheese, lettuce, tomato, pickles, and onions on a toasted bun.<br><br>Price: 550 PKR</h5>
+                </div>
+                <button class="add-to-cart" id="addClassicBurgerButton">Add to cart</button>
+            </div>
+            <div class="one-item">
+                <img  class="item-image" src="../static/images/cheese burger.jpg" alt="Cheese Burger">
+                <div class="item-detail">
+                    <h3 class="item-name">Cheese Burger</h3>
+                    <h5 class="description">A cheese loaded burger topped with crispy chicken and garlic sauce.<br><br>Price: 700 PKR</h5>
+                </div>
+                <button class="add-to-cart" id="addCheeseBurgerButton">Add to cart</button>
+            </div>
+        </div>
+        <h1 class="category">Sandwiches</h1>
+        <div class="two-items">
+            <div class="one-item">
+                <img class="item-image" src="../static/images/chicken club sandwich.jpg" alt="Chicken Club Sandwich">
+                <div class="item-detail">
+                    <h3 class="item-name">Chicken Club Sandwich</h3>
+                    <h5 class="description">Grilled chicken breast, lettuce, tomato, and mayo on toasted bread.<br><br>Price: 350 PKR</h5>
+                </div>
+                <button class="add-to-cart" id="addChickenClubSandwich">Add to cart</button>
+            </div>
+            <div class="one-item">
+                <img  class="item-image" src="../static/images/ham sandwich.jpg" alt="Ham Sandwich">
+                <div class="item-detail">
+                    <h3 class="item-name">Ham Sandwich</h3>
+                    <h5 class="description">A classic ham sandwich is a simple yet satisfying dish that features thinly sliced ham on bread, often with additional toppings like cheese, lettuce, tomato, and mustard or mayonnaise.<br><br>Price: 450 PKR</h5>
+                </div>
+                <button class="add-to-cart" id="addHamSandwich">Add to cart</button>
+            </div>
+        </div>
+        <h1 class="category">Wraps</h1>
+        <div class="two-items">
+            <div class="one-item">
+                <img class="item-image" src="../static/images/chicken caesar wrap.jpg" alt="Chicken Caesar Wrap">
+                <div class="item-detail">
+                    <h3 class="item-name">Chicken Caesar Wrap</h3>
+                    <h5 class="description">Grilled chicken, romaine lettuce, Caesar dressing, and Parmesan cheese in a tortilla wrap.<br><br>Price: 650 PKR</h5>
+                </div>
+                <button class="add-to-cart" id="addChickenCaesarWrap">Add to cart</button>
+            </div>
+            <div class="one-item">
+                <img  class="item-image" src="../static/images/spicy veggie wrap.jpg" alt="Spicy Veggie Wrap">
+                <div class="item-detail">
+                    <h3 class="item-name">Spicy Veggie Wrap</h3>
+                    <h5 class="description">Sautéed vegetables, spicy sauce, and hummus in a tortilla wrap.<br><br>Price: 700 PKR</h5>
+                </div>
+                <button class="add-to-cart" id="addSpicyVeggieWrap">Add to cart</button>
+            </div>
+        </div>
+        <h1 class="category">Fries and Sides</h1>
+        <div class="two-items">
+            <div class="one-item">
+                <img class="item-image" src="../static/images/french fries.jpg" alt="French Fries">
+                <div class="item-detail">
+                    <h3 class="item-name">French Fries</h3>
+                    <h5 class="description">Crispy and golden French fries.<br><br>Price: 200 PKR</h5>
+                </div>
+                <button class="add-to-cart" id="addFrenchFries">Add to cart</button>
+            </div>
+            <div class="one-item">
+                <img  class="item-image" src="../static/images/onion rings.jpg" alt="Onion Rings">
+                <div class="item-detail">
+                    <h3 class="item-name">Onion Rings</h3>
+                    <h5 class="description">Breaded and fried onion rings.<br><br>Price: 250 PKR</h5>
+                </div>
+                <button class="add-to-cart" id="addOnionRings">Add to cart</button>
+            </div>
+        </div>
+        <div class="two-items">
+            <div class="one-item">
+                <img class="item-image" src="../static/images/cheese fries.jpg" alt="Cheese Fries">
+                <div class="item-detail">
+                    <h3 class="item-name">Cheese Fries</h3>
+                    <h5 class="description">French fries topped with melted cheese. <br><br>Price: 300 PKR</h5>
+                </div>
+                <button class="add-to-cart" id="addCheeseFries">Add to cart</button>
+            </div>
+            <div class="one-item">
+                <img  class="item-image" src="../static/images/chicken nuggets.jpg" alt="Chicken Nuggets">
+                <div class="item-detail">
+                    <h3 class="item-name">Chicken Nuggets</h3>
+                    <h5 class="description">Crispy and tender chicken nuggets.<br><br>Price: 400 PKR</h5>
+                </div>
+                <button class="add-to-cart" id="addChickenNuggets">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <script src='../static/js/order.js'></script>
+</body>

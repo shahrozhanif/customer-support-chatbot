@@ -1,0 +1,102 @@
+body {
+    margin: 0px;
+}
+
+#box {
+    display: block;
+    height: 200px;
+    background: #f8f7e5;
+}
+
+#lines-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    height: 4px;
+    margin-top: 40px;
+    background-color: #000000;
+    width: 600px;
+}
+
+#mainLogo {
+    width: 120px;
+    height: 110px;
+}
+
+#mainHeading {
+    text-align: center;
+    margin-top: 18px;
+    font-family: "Merienda", cursive;
+    font-size: 40px;
+}
+
+#orderSubmissionHeading {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.information-row {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.information-label, #bill{
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.input-field {
+    margin-left: 10px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.item-image {
+    height: 80px;
+    width: 80px;
+}
+
+.item-name, .item-quantity {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#submitOrderButton {
+    margin-left: 100px;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 100px;
+    margin-top: 20px;
+}
+
+#submitOrderButton:hover {
+    background-color: #45a049;
+}
+
+#fieldsUnfillMessage {
+    color: red;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}

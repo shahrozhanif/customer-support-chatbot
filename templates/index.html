@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eater's Delight</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@800&family=SUSE:wght@500&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@800&family=SUSE:wght@500&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img id="logo" src="../static/images/Logo.png" alt="logo">
+        <h1>Welcome to Eater's Delight</h1>
+    </div>
+
+    <div id="content-image">
+        <div id="content">
+            <h2>How can we serve you today?</h2>
+            <div id="button-container">
+                <a href="{{url_for('order')}}"><button class="button">Make an Order</button></a>
+                <a href="{{url_for('customer_service')}}"><button class="button">Customer Service</button></a>
+            </div>
+        </div>
+        <div id="image">
+            <img id="main-image" src="../static/images/restaurant.jpg" alt="picture of a restaurant">
+        </div>
+    </div>
+</body>
+</html>

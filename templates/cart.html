@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eater's Delight Customer Service</title>
+    <link rel="stylesheet" href="../static/css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@800&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div id="box">
+            <div id="lines-logo">
+                <div class="line"></div>
+                <img id="mainLogo" src="../static/images/Logo.png" alt="logo">
+                <div class="line"></div>
+            </div>
+            <h1 id="mainHeading">Order Submission Page</h1>
+        </div>
+    </div>
+
+    <div id="orderSubmissionSection">
+        <h1 id="orderSubmissionHeading">Please Enter Your Details</h1>
+        <div class="information-row">
+            <label class="information-label">Name</label>
+            <input type="text" id="name" class="input-field" required>
+        </div>
+        <div class="information-row">
+            <label class="information-label">Address</label>
+            <input type="text" id="address" class="input-field" required>
+        </div>
+        <div class="information-row">
+            <label class="information-label">Phone Number</label>
+            <input type="tel" id="phone" class="input-field" required>
+        </div>
+        <div class="information-row">
+            <label class="information-label">Special Instructions</label>
+            <input type="text" id="specialInstructions" class="input-field">
+        </div>
+        <h1 id="orderSubmissionHeading">Order Details</h1>
+        <div id="items"></div>
+        <div id="bill">Total Bill: PKR </div>
+        <button id="submitOrderButton">Submit Order</button>
+        <p id="fieldsUnfillMessage"></p>
+    </div>
+    <script src="../static/js/cart.js"></script>
+</body>
+</html>

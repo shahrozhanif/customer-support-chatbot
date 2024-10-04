@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eater's Delight Customer Service</title>
+    <link rel="stylesheet" href="../static/css/customer_service.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div id="box">
+            <div id="linesLogo">
+                <div class="line"></div>
+                <img id="mainLogo" src="../static/images/Logo.png" alt="Eater's Delight Logo">
+                <div class="line"></div>
+            </div>
+            <h1 id="mainHeading">Eater's Delight Customer Service</h1>
+        </div>
+    </div>
+    <div id="orderSection" class="ask-section">
+        <h4 class="second-heading">Please Enter Your Order ID</h4>
+        <div class="input-area">
+            <input type="text" id="orderId" class="input-field" onkeydown="orderIdEnter(event)">
+            <button onclick="submitOrderId()">Submit</button>
+        </div>
+        <div class="response-container-id">
+            <div class="chat-bubble"></div>
+        </div>
+    </div>
+    <div id="querySection" class="ask-section">
+        <h4 class="second-heading">Please Enter Your Query</h4>
+        <div class="input-area">
+            <input type="text"  id="query" class="input-field" onkeydown="queryEnter(event)">
+            <button onclick="submitQuery()">Submit</button>
+        </div>
+        <div class="response-container-query">
+            <div class="chat-bubble"></div>
+        </div>
+    </div>
+    <script src="../static/js/customer_service.js"></script>
+</body>
+</html>

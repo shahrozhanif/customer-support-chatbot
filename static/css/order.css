@@ -1,0 +1,116 @@
+/* HEADER */
+body {
+    margin: 0px;
+}
+
+#box {
+    display: block;
+    height: 200px;
+    background: #f8f7e5;
+}
+
+#lines-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    height: 4px;
+    margin-top: 40px;
+    background-color: #000000;
+    width: 600px;
+}
+
+#main-logo {
+    width: 120px;
+    height: 110px;
+}
+
+#title {
+    text-align: center;
+    margin-top: 18px;
+    font-family: "Merienda", cursive;
+    font-size: 40px;
+}
+
+#cartRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category {
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 35px;
+}
+
+#firstCategory {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 70px;
+}
+
+#cart {
+    text-decoration: None;
+    background-image: url("../images/cart.png");
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#cartBadge {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 33px;
+    color: white;
+    font-size: 20px;
+}
+
+.two-items {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.one-item {
+    display: flex;
+    align-items: center;
+}
+
+.item-image {
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.item-name {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 25px;
+    color: #bc3908;
+}
+
+.description {
+    width: 300px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 20px;
+}
