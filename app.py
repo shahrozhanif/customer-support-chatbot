@@ -78,21 +78,20 @@ def submit_query():
     chat = model.start_chat(history=history)
 
     response = chat.send_message(customer_query, generation_config=genai.types.GenerationConfig(max_output_tokens=200, temperature=0.5)).text
-    if "Change address request:" in response:
+    if "Change address request::" in response:
         change_request = Change_Request(orders_df, order, response, 'delivery address')
         response = change_request.get_response()
 
-    elif "Change order request:" in response:
+    elif "Change order request::" in response:
         change_request = Change_Request_Items(orders_df, order, response, 'order')
         response = change_request.get_response()
         
-    elif "Change cooking instructions request:" in response:
+    elif "Change cooking instructions request::" in response:
         change_request = Change_Request(orders_df, order, response, 'cooking instructions')
         response = change_request.get_response()
 
     history.append({"role": "user", "parts": customer_query})
     history.append({"role": "model", "parts": response})
-    print(customer_query)
     print(response)
     return jsonify({'response': response})
 
