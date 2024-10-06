@@ -72,7 +72,7 @@ def submit_query():
     data = request.get_json()
     customer_query = data.get('query')
     
-    model = genai.GenerativeModel("gemini-1.5-flash", system_instruction = "You are a customer service chatbot for a restaurant named 'Eater's Delight'. ", safety_settings={
+    model = genai.GenerativeModel("gemini-1.5-flash", system_instruction = "You are a customer service chatbot for a restaurant named 'Eater's Delight'. You will be provided SOPs which you will have to follow.", safety_settings={
         HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: HarmBlockThreshold.BLOCK_NONE
     })
     chat = model.start_chat(history=history)
