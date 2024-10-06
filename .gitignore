@@ -161,3 +161,4 @@ cython_debug/
 /AWS Deployment
 /customer-service-chatbot
 database/orders.xlsx
+api_key.py
